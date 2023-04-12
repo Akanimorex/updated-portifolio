@@ -26,7 +26,7 @@ body, html {
   background: #171717;
 }
 
-p {
+.App p {
   color:#BFBFBFC7;
   font-size: 0.87rem;
 
@@ -70,19 +70,21 @@ p {
 .App_light {
   background: #BFBFBFC7;
 }
-
-p {
-  color:#BFBFBFC7;
+.App_light p {
+  color:#202121;
   font-size: 0.87rem;
 
 }
 
 .Nav_light {
   border-bottom: 1px solid #171717;
+  font-size: 0.875rem;
+
 }
 
 
 .Nav-header_light a {
+  font-size: 0.875rem;
   color: #000;
 }
 

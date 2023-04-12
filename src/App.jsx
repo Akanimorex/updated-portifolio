@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { FaMinus } from "react-icons/fa"
-import { FaLink } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaClipboard } from 'react-icons/fa'
+import {BsArrowUpRight} from 'react-icons/bs'
+import {MdNightlight} from 'react-icons/md'
+import {CiLight} from 'react-icons/ci'
 import Works from './components/Works'
 
 import './App.css'
@@ -34,35 +36,45 @@ function App() {
   return (
     <div className={isLightMode?"App_light":"App"}>
 
-      <nav className className="bg-blend-darken  dark:bg-gray-900 w-5/5 flex justify-center Nav">
+      <nav className={isLightMode?"bg-blend-darken  dark:bg-gray-900 w-5/5 flex justify-center Nav_light " : "bg-blend-darken  dark:bg-gray-900 w-5/5 flex justify-center Nav"}>
         <div className="w-5/5 flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header">
+            <ul className={
+              isLightMode?"font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light"
+            :
+            "font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"}
+            >
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200" aria-current="page">Folio 2023</a>
+                <a href="#" className={isLightMode?"block py-2 pl-3 pr-4   rounded  md:p-0 text-black":"block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200"}  aria-current="page">Folio 2023</a>
               </li>
               <li>
-                <FaMinus className=' block py-2 pl-3 pr-4  mt-1  md:p-0 text-gray-200'></FaMinus>
+                <FaMinus className={isLightMode?"block py-2 pl-3 pr-4  mt-1  md:p-0 text-black":"block py-2 pl-3 pr-4  mt-1  md:p-0 text-gray-200"}></FaMinus>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200">Lagos, Nigeria</a>
+                <a href="#" className={isLightMode?"block py-2 pl-3 pr-4   rounded  md:p-0 text-black":"block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200"}>Lagos, Nigeria</a>
               </li>
               <li>
-                <FaMinus className='block py-2 pl-3 pr-4 mt-1   md:p-0 text-gray-200'></FaMinus>
+                <FaMinus className={isLightMode?"block py-2 pl-3 pr-4  mt-1  md:p-0 text-black":"block py-2 pl-3 pr-4  mt-1  md:p-0 text-gray-200"}></FaMinus>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200">{currentTime.toLocaleTimeString()}</a>
+                <a href="#" className={isLightMode?"block py-2 pl-3 pr-4   rounded  md:p-0 text-black":"block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200"}>{currentTime.toLocaleTimeString()}</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <button onClick={toggleLightMode}>Light mode</button>
+      <div className='relative'>
+        <button 
+        className="absolute right-2 top-2  flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"  onClick={toggleLightMode}>
+          {isLightMode? <CiLight/>:<MdNightlight/> } 
+        </button>
+      </div>
+   
       <div className='p_container'>
         <div className='w-5/5 flex justify-between h-screen'>
           <div className='text-left left-side p-5 flex flex-col relative'>
             <div className='top h-screen'>
-              <h1 className='text-white py-9'>Akanimo Rex</h1>
+              <h1 className={isLightMode?"text-black py-9":"text-white py-9"} >Akanimo Rex</h1>
               <p className=''>
                 <span>
                   I’m a front end dev that specialize in day to day activities in the presidential villa cooking necessary pixels and what not for public consumption.
@@ -77,22 +89,23 @@ function App() {
               </p>
             </div>
             <div className='bottom'>
-              <ul className="text-gray-200 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header">
-                <li className='flex flex-row align-baseline items-baseline gap-x-2'> <FaClipboard/> Resume <FaLink/> </li>
-                <li className='flex flex-row align-baseline items-baseline gap-x-2'><FaGithub/> Github <FaLink/></li>
-                <li  className='flex flex-row align-baseline items-baseline gap-x-2'><FaTwitter/> Twitter <FaLink/> </li>
+              <ul className={isLightMode?"text-black font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light":"text-gray-200 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
+                <li className=''> <a href='' className='flex flex-row align-baseline items-baseline gap-x-2'><FaClipboard/> Resume <BsArrowUpRight/></a> </li>
+                <li> <a href="http://" className='flex flex-row align-baseline items-baseline gap-x-2'><FaGithub/> Github <BsArrowUpRight/></a></li>
+                <li><a href="http://" className='flex flex-row align-baseline items-baseline gap-x-2'><FaTwitter/> Twitter <BsArrowUpRight/></a></li>
               </ul>
               <p>Inspired by <a href='https://www.sarahdayan.dev'>Sarah Dayan</a></p>
             </div>
           </div>
           <div className='right-side text-left relative overflow-y-scroll scrollbar'>
-           <h3 className='text-gray-200 py-5'>WORKS</h3> 
+           <h3 className={isLightMode?'text-black py-5':'text-gray-200 py-5'}>WORKS</h3> 
 
-           <Works/>
-           <Works/>
-           <Works/>
-           <Works/>
-           <Works/>
+           <Works isLightMode={isLightMode}/>
+           <Works isLightMode={isLightMode}/>
+           <Works isLightMode={isLightMode}/>
+           <Works isLightMode={isLightMode}/>
+           <Works isLightMode={isLightMode}/>
+          
           </div>
         </div>
       </div>
