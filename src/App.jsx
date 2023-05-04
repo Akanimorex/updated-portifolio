@@ -38,11 +38,11 @@ function App() {
 
       <nav className={isLightMode ? "bg-blend-darken  dark:bg-gray-900 w-5/5 flex justify-center Nav_light " : "bg-blend-darken  dark:bg-gray-900 w-5/5 flex justify-center Nav"}>
         <div className="w-5/5 flex flex-wrap items-center justify-between mx-auto p-4">
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div className=" w-full md:block md:w-auto" id="navbar-default">
             <ul className={
-              isLightMode ? "font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light"
+              isLightMode ? "font-medium flex flex-row p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light"
                 :
-                "font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"}
+                "font-medium flex flex-row p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"}
             >
               <li>
                 <a href="#" className={isLightMode ? "block py-2 pl-3 pr-4   rounded  md:p-0 text-black" : "block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200"} aria-current="page">Folio 2023</a>
@@ -70,9 +70,9 @@ function App() {
         </button>
       </div>
 
-      <div className='p_container'>
-        <div className='w-5/5 flex justify-between h-screen'>
-          <div className='text-left left-side p-5 flex flex-col relative'>
+      <div className='p_container lg:pl-[10rem] md:pl-[5rem] pl-[20px] pr-[20px] md:pr-[5rem] lg:pr-[10rem] pt-[4rem] pb-[4rem]'>
+        <div className='w-5/5  sm:flex justify-between h-auto'>
+          <div className='text-left h-screen left-side sm:w-[50%] p-5 flex flex-col relative'>
             <div className='top h-screen'>
               <h1 className={isLightMode ? "text-black py-9" : "text-white py-9"} >Akanimo Rex</h1>
               <p className=''>
@@ -88,16 +88,8 @@ function App() {
                 </span>
               </p>
             </div>
-            <div className='bottom'>
-              <ul className={isLightMode ? "text-black font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light" : "text-gray-200 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
-                <li> <a target="_blank" href='https://docs.google.com/document/d/1fA5ZT-dPzVjzxzHPLYLPeMaPnZekxFkc/edit?usp=sharing&ouid=117237400129134902289&rtpof=true&sd=true' className='flex flex-row align-baseline items-baseline gap-x-2'><FaClipboard /> Resume <BsArrowUpRight /></a> </li>
-                <li> <a target="_blank" href="https://github.com/Akanimorex" className='flex flex-row align-baseline items-baseline gap-x-2'><FaGithub /> Github <BsArrowUpRight /></a></li>
-                <li><a target="_blank" href="https://twitter.com/_kanimoh" className='flex flex-row align-baseline items-baseline gap-x-2'><FaTwitter /> Twitter <BsArrowUpRight /></a></li>
-              </ul>
-              <p>Inspired by <a  className={isLightMode?"text-black":'text-white'} href='https://www.sarahdayan.dev'>Sarah Dayan</a></p>
-            </div>
           </div>
-          <div className='right-side text-left relative overflow-y-scroll scrollbar'>
+          <div className='right-side h-screen   w-full sm:w-[50%] text-left relative overflow-y-scroll scrollbar'>
             <h3 className={isLightMode ? 'text-black py-5' : 'text-gray-200 py-5'}>WORKS</h3>
             <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"}  />
             <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} />
@@ -105,6 +97,15 @@ function App() {
             <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} />
           </div>
         </div>
+        <div className=''>
+              <ul className={isLightMode ? "text-black  text-[12px] md:text-[12px] flex p-4 md:p-0  align-bottom  0 flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light" : "text-gray-200 font-medium flex flex-row p-4 md:p-0 mt-4 align-bottom  md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
+                <li> <a target="_blank" href='https://docs.google.com/document/d/1fA5ZT-dPzVjzxzHPLYLPeMaPnZekxFkc/edit?usp=sharing&ouid=117237400129134902289&rtpof=true&sd=true' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
+
+                <li> <a target="_blank" href="https://github.com/Akanimorex" className='flex flex-row align-baseline items-baseline p-3 md:gap-x-2'><FaGithub /> Github <BsArrowUpRight  className='hidden md:block' /></a></li>
+                <li><a target="_blank" href="https://twitter.com/_kanimoh" className='flex flex-row align-baseline items-baseline p-3  md:gap-x-2'><FaTwitter /> Twitter <BsArrowUpRight  className='hidden md:block' /></a></li>
+              </ul>
+              <p className='text-center md:text-left' >Inspired by <a  className={isLightMode?"text-black":'text-white'} href='https://www.sarahdayan.dev'>Sarah Dayan</a></p>
+          </div>
       </div>
 
     </div>

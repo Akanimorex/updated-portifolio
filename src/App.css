@@ -44,19 +44,19 @@ body, html {
   color: #fff;
 }
 
-.left-side {
-   width: 453px;
+/* .left-side {
+   width: 50%;
 }
 .right-side {
-   width: 31.25rem;
-}
+   width: 50%;
+} */
 
-.p_container {
+/* .p_container {
   padding: 4rem 10rem ;
-}
+} */
 
 .Work_box {
-  width: 32.7rem;
+  /* width: 32.7rem; */
   background-color:#202121;
 }
 
@@ -89,7 +89,8 @@ body, html {
 }
 
 .Work_box_light {
-  width: 32.7rem;
+  /* width: 32.7rem; */
+  
   color:#000 ;
   background-color:#fff;
 }
