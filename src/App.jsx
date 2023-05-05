@@ -91,7 +91,7 @@ function App() {
           </div>
           <div className='right-side h-screen   w-full sm:w-[50%] text-left relative overflow-y-scroll scrollbar'>
             <h3 className={isLightMode ? 'text-black py-5' : 'text-gray-200 py-5'}>WORKS</h3>
-            <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"}  />
+            <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"}/>
             <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} />
             <Works isLightMode={isLightMode} name={'Bookdown'} description={"Food Application"}/>
             <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} />
