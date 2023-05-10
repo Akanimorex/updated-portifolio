@@ -40,9 +40,9 @@ function App() {
         <div className="w-5/5 flex flex-wrap items-center justify-between mx-auto p-4">
           <div className=" w-full md:block md:w-auto" id="navbar-default">
             <ul className={
-              isLightMode ? "font-medium flex flex-row p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light"
+              isLightMode ? " flex flex-row p-1  md:p-0 mt-1 align-bottom text-[12px] md:text-[0.875rem]  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light"
                 :
-                "font-medium flex flex-row p-4 md:p-0 mt-4 border border-gray-400 align-bottom  0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"}
+                " flex flex-row p-1 md:p-0 mt-1  align-bottom  text-[12px] md:text-[ 0.875rem] space-x-2 0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"}
             >
               <li>
                 <a href="#" className={isLightMode ? "block py-2 pl-3 pr-4   rounded  md:p-0 text-black" : "block py-2 pl-3 pr-4   rounded  md:p-0 text-gray-200"} aria-current="page">Folio 2023</a>
@@ -91,10 +91,10 @@ function App() {
           </div>
           <div className='right-side h-screen   w-full sm:w-[50%] text-left relative overflow-y-scroll scrollbar'>
             <h3 className={isLightMode ? 'text-black py-5' : 'text-gray-200 py-5'}>WORKS</h3>
-            <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"}/>
-            <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} />
-            <Works isLightMode={isLightMode} name={'Bookdown'} description={"Food Application"}/>
-            <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} />
+            <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"} skills={"ReactJs + Typescript + Tailwind"} link={"https://www.skaterbirds.io/"}/>
+            <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} skills={"ReactJs + Typescript + NodeJs + material ui"} link={"https://p2p.polkabridge.org/"} />
+            <Works isLightMode={isLightMode} name={'Bookdown'} description={"Food Application"} skills={"HTML + CSS/SCSS + Javascript"}/>
+            <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} skills={"HTML + CSS/SCSS + Javascript + ReactJs"} link={"https://theroothub.com/"} />
           </div>
         </div>
         <div className=''>
