@@ -79,6 +79,8 @@ function App() {
                 <span>
                   Hello ! I'm a skilled frontend engineer with 3+ years of experience in ReactJs, Typescript, Tailwindcss, Material UI, HTML/CSS.
                   I specialize in crafting seamless user experiences with pixel-perfect designs and clean code. When I'm not coding, you'll find me indulging in my hobbies of gaming, reading, and music.
+                  <br></br>
+                   I also write about programming concepts and interesting things i have discovered, and documentations on <a href='https://akanimorex.hashnode.dev/' target='_blank'> HashNode </a> 
 
                 </span>
                 <br></br>
