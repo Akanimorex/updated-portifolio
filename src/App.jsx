@@ -102,7 +102,7 @@ function App() {
         </div>
         <div className=''>
               <ul className={isLightMode ? "text-black  text-[12px] md:text-[12px] flex p-4 md:p-0  align-bottom  0 flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light" : "text-gray-200 font-medium flex flex-row p-4 md:p-0 mt-4 align-bottom  md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
-                <li> <a target="_blank" href='https://docs.google.com/document/d/1fA5ZT-dPzVjzxzHPLYLPeMaPnZekxFkc/edit?usp=sharing&ouid=117237400129134902289&rtpof=true&sd=true' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
+                <li> <a target="_blank" href='https://drive.google.com/file/d/1g8vGoicVhX04-ziN82oLRCYwWpRDbRRM/view?usp=sharing' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
 
                 <li> <a target="_blank" href="https://github.com/Akanimorex" className='flex flex-row align-baseline items-baseline p-3 md:gap-x-2'><FaGithub /> Github <BsArrowUpRight  className='hidden md:block' /></a></li>
                 <li><a target="_blank" href="https://twitter.com/_kanimoh" className='flex flex-row align-baseline items-baseline p-3  md:gap-x-2'><FaTwitter /> Twitter <BsArrowUpRight  className='hidden md:block' /></a></li>
