@@ -72,8 +72,8 @@ function App() {
 
       <div className='p_container lg:pl-[10rem] md:pl-[5rem] pl-[20px] pr-[20px] md:pr-[5rem] lg:pr-[10rem] pt-[4rem] pb-[4rem]'>
         <div className='w-5/5  sm:flex justify-between h-auto'>
-          <div className='text-left h-screen left-side sm:w-[50%] p-5 flex flex-col relative'>
-            <div className='top h-screen'>
+          <div className='text-left lg:h-screen md:[70vh] sm:h-[50vh] left-side sm:w-[50%] p-5 flex flex-col relative'>
+            <div className='top  lg:h-screen md:[70vh] sm:h-[50vh] '>
               <h1 className={isLightMode ? "text-black py-9" : "text-white py-9"} >Akanimo Rex</h1>
               <p className=''>
                 <span>
