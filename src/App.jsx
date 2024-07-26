@@ -94,15 +94,15 @@ function App() {
           <div className='right-side h-screen   w-full sm:w-[50%] text-left relative overflow-y-scroll scrollbar'>
             <h3 className={isLightMode ? 'text-black py-5' : 'text-gray-200 py-5'}>WORKS</h3>
             <Works isLightMode={isLightMode} name={"Skaterbirds"} description={"NFT product website"} skills={"ReactJs + Typescript + Tailwind"} link={"https://www.skaterbirds.io/"}/>
-            <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} skills={"ReactJs + Typescript + NodeJs + material ui"} link={"https://classic-web.netlify.app/"} />
+            <Works isLightMode={isLightMode} name={"Polkabridge"} description={" Decentralized All-in-one Financial Application Platform "} skills={"ReactJs + Typescript + NodeJs + material ui"} link={"https://p2p.polkabridge.org/"} />
             <Works isLightMode={isLightMode} name={'Bookdown'} description={"Food Application"} skills={"HTML + CSS/SCSS + Javascript"}/>
-            <Works isLightMode={isLightMode} name={'ClaassicChat'} description={"Chat Application"} skills={"CSS/SCSS + ChakraUI + ReactJs + NextJs + Typescript"} link={"https://theroothub.com/"} />
+            <Works isLightMode={isLightMode} name={'ClaassicChat'} description={"Chat Application"} skills={"CSS/SCSS + ChakraUI + ReactJs + NextJs + Typescript"} link={"https://classic-web.netlify.app/"} />
             <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} skills={"HTML + CSS/SCSS + Javascript + ReactJs"} link={"https://theroothub.com/"} />
           </div>
         </div>
         <div className=''>
               <ul className={isLightMode ? "text-black  text-[12px] md:text-[12px] flex p-4 md:p-0  align-bottom  0 flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light" : "text-gray-200 font-medium flex flex-row p-4 md:p-0 mt-4 align-bottom  md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
-                <li> <a target="_blank" href='https://drive.google.com/file/d/1g8vGoicVhX04-ziN82oLRCYwWpRDbRRM/view?usp=sharing' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
+                <li> <a target="_blank" href='https://drive.google.com/file/d/1RXplU2j7H_jl7Nb3S4SiACjenEfEvbhj/view?usp=sharing' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
 
                 <li> <a target="_blank" href="https://github.com/Akanimorex" className='flex flex-row align-baseline items-baseline p-3 md:gap-x-2'><FaGithub /> Github <BsArrowUpRight  className='hidden md:block' /></a></li>
                 <li><a target="_blank" href="https://twitter.com/_kanimoh" className='flex flex-row align-baseline items-baseline p-3  md:gap-x-2'><FaTwitter /> Twitter <BsArrowUpRight  className='hidden md:block' /></a></li>
