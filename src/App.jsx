@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import { FaMinus } from "react-icons/fa"
 import { FaGithub } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaYoutube } from 'react-icons/fa'
 import { FaClipboard } from 'react-icons/fa'
 import { BsArrowUpRight } from 'react-icons/bs'
 import { MdNightlight } from 'react-icons/md'
@@ -77,10 +79,10 @@ function App() {
               <h1 className={isLightMode ? "text-black py-9" : "text-white py-9"} >Akanimo Rex</h1>
               <p className=''>
                 <span>
-                  Hello ! I'm a skilled software developer with 3+ years of experience in ReactJs, Typescript,Javascript, Tailwindcss, Material UI, HTML/CSS.
-                  I specialize in crafting seamless user experiences with pixel-perfect designs and clean code. When I'm not coding, you'll find me indulging in my hobbies of gaming, reading, and music.
+                Hello!, I’m a blockchain developer with a strong focus on writing efficient Solidity smart contracts and building robust Web3 frontends. I’ve worked on decentralized applications (dApps) across Ethereum and other EVM-compatible chains, ensuring secure and scalable solutions.
                   <br></br>
-                   I also write about programming concepts and interesting things i have discovered, and documentations on <a href='https://akanimorex.hashnode.dev/' target='_blank'> HashNode </a> 
+                  To demystify blockchain concepts, I’ve created a YouTube video series where I break down complex blockchain topics into digestible content for developers and enthusiasts alike. 
+                  I also write about programming concepts, blockchain innovations, and technical documentation on <a href='https://akanimorex.hashnode.dev/' target='_blank'> HashNode </a> , sharing my insights and discoveries with the developer community.
 
                 </span>
                 <br></br>
@@ -90,6 +92,52 @@ function App() {
                 </span>
               </p>
             </div>
+
+            <ul
+              className={`${
+                isLightMode
+                  ? "text-black text-sm flex flex-wrap p-2 gap-2 md:gap-4 items-center justify-center dark:bg-gray-800 dark:border-gray-700 Nav-header_light"
+                  : "text-gray-200 text-sm font-medium flex flex-wrap p-2 gap-2 md:gap-4 items-center justify-center dark:bg-gray-800 dark:border-gray-700 Nav-header"
+              }`}
+            >
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/akanimo-akpan/"
+                  className="flex flex-row items-center gap-x-1 p-2"
+                >
+                  <FaLinkedin /> Linkedin <BsArrowUpRight className="hidden md:block" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Akanimorex"
+                  className="flex flex-row items-center gap-x-1 p-2"
+                >
+                  <FaGithub /> Github <BsArrowUpRight className="hidden md:block" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/_kanimoh"
+                  className="flex flex-row items-center gap-x-1 p-2"
+                >
+                  <FaTwitter /> Twitter <BsArrowUpRight className="hidden md:block" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@akanimoakpan9083/featured"
+                  className="flex flex-row items-center gap-x-1 p-2"
+                >
+                  <FaYoutube /> Youtube <BsArrowUpRight className="hidden md:block" />
+                </a>
+              </li>
+            </ul>
+
           </div>
           <div className='right-side h-screen   w-full sm:w-[50%] text-left relative overflow-y-scroll scrollbar'>
             <h3 className={isLightMode ? 'text-black py-5' : 'text-gray-200 py-5'}>WORKS</h3>
@@ -100,13 +148,8 @@ function App() {
             <Works isLightMode={isLightMode} name={'The Roothub'} description={"Innovation and Incubation Hub"} skills={"HTML + CSS/SCSS + Javascript + ReactJs"} link={"https://theroothub.com/"} />
           </div>
         </div>
-        <div className=''>
-              <ul className={isLightMode ? "text-black  text-[12px] md:text-[12px] flex p-4 md:p-0  align-bottom  0 flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header_light" : "text-gray-200 font-medium flex flex-row p-4 md:p-0 mt-4 align-bottom  md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 Nav-header"} >
-                <li> <a target="_blank" href='https://drive.google.com/file/d/1RXplU2j7H_jl7Nb3S4SiACjenEfEvbhj/view?usp=sharing' className='flex flex-row  pt-3 align-baseline items-baseline md:gap-x-2'><FaClipboard /> Resume <BsArrowUpRight  className='hidden md:block' /></a> </li>
-
-                <li> <a target="_blank" href="https://github.com/Akanimorex" className='flex flex-row align-baseline items-baseline p-3 md:gap-x-2'><FaGithub /> Github <BsArrowUpRight  className='hidden md:block' /></a></li>
-                <li><a target="_blank" href="https://twitter.com/_kanimoh" className='flex flex-row align-baseline items-baseline p-3  md:gap-x-2'><FaTwitter /> Twitter <BsArrowUpRight  className='hidden md:block' /></a></li>
-              </ul>
+        <div className='p-4'>
+        
               <p className='text-center md:text-left' >Inspired by <a  className={isLightMode?"text-black":'text-white'} href='https://www.sarahdayan.dev'>Sarah Dayan</a></p>
           </div>
       </div>
