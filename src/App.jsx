@@ -79,7 +79,7 @@ function App() {
               <h1 className={isLightMode ? "text-black py-9" : "text-white py-9"} >Akanimo Rex</h1>
               <p className=''>
                 <span>
-                Hello!, I’m a blockchain developer with a strong focus on writing efficient Solidity smart contracts and building robust Web3 frontends. I’ve worked on decentralized applications (dApps) across Ethereum and other EVM-compatible chains, ensuring secure and scalable solutions.
+                Hello!, I’m a Software Engineer with a strong focus on writing efficient software  and building robust  frontends. I’ve worked on both centralized and decentralized applications (dApps) across Ethereum and other EVM-compatible chains, ensuring secure and scalable solutions.
                   <br></br>
                   To demystify blockchain concepts, I’ve created a YouTube video series where I break down complex blockchain topics into digestible content for developers and enthusiasts alike. 
                   I also write about programming concepts, blockchain innovations, and technical documentation on <a href='https://akanimorex.hashnode.dev/' target='_blank'> HashNode </a> , sharing my insights and discoveries with the developer community.
